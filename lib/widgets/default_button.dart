@@ -14,17 +14,17 @@ class DefaultButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: width,
-      height: height ?? 45,
+      height: height ?? 60,
       child: ElevatedButton(
         child: child,
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all<Color>(Theme.of(context).primaryColor),
           textStyle: MaterialStateProperty.all<TextStyle>(
-            TextStyle(color: Colors.white)
+            TextStyle(color: Colors.black)
           ),
           shape: MaterialStateProperty.all<OutlinedBorder>(
             RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(28),
+              borderRadius: BorderRadius.circular(14),
             )
           )
         ),

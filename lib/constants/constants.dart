@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 /// APP SETINGS INFO CONSTANTS - SECTION ///
 ///
 const String APP_NAME = "Flutter Dating App";
-const Color APP_PRIMARY_COLOR = Colors.pink; 
+const Color APP_PRIMARY_COLOR = Color.fromRGBO(235, 243, 249, 1); 
 const Color APP_ACCENT_COLOR = Colors.pinkAccent;
 const String APP_VERSION_NAME = "v1.0.4";
 const int ANDROID_APP_VERSION_NUMBER = 4; // Google Play Version Number
 const int IOS_APP_VERSION_NUMBER = 4; // App Store Version Number
+//const TextStyle textStyle = TextStyle();
 // 
 // Add Google Maps - API KEY required for Passport feature
 // 
@@ -67,8 +68,8 @@ const String STORE_SUBSCRIPTION_IDS = "store_subscription_ids";
 const String FREE_ACCOUNT_MAX_DISTANCE = "free_account_max_distance";
 const String VIP_ACCOUNT_MAX_DISTANCE = "vip_account_max_distance";
 // Admob variables
-const String ADMOB_APP_ID = "admob_app_id";
-const String ADMOB_INTERSTITIAL_AD_ID = "admob_interstitial_ad_id";
+//const String ADMOB_APP_ID = "admob_app_id";
+//const String ADMOB_INTERSTITIAL_AD_ID = "admob_interstitial_ad_id";
 
 /// DATABASE FIELDS FOR USER COLLECTION  ///
 ///

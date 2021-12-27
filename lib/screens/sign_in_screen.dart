@@ -5,6 +5,7 @@ import 'package:dating_app/widgets/default_button.dart';
 import 'package:dating_app/widgets/terms_of_service_row.dart';
 import 'package:flutter/material.dart';
 import 'package:dating_app/helpers/app_localizations.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 
 class SignInScreen extends StatefulWidget {
@@ -24,31 +25,35 @@ class _SignInScreenState extends State<SignInScreen> {
 
     return Scaffold(
       key: _scaffoldKey,
-      backgroundColor: Colors.transparent,
+      //backgroundColor: Colors.transparent,
       body: Container(
         decoration: BoxDecoration(
-          image: DecorationImage(
+         /* image: DecorationImage(
               image: AssetImage("assets/images/background_image.jpg"),
               fit: BoxFit.fill,
-              repeat: ImageRepeat.repeatY),
+              repeat: ImageRepeat.repeatY),*/
+              color: Color.fromRGBO(235, 243, 249, 1),
         ),
         child: Container(
           decoration: BoxDecoration(
-              gradient: LinearGradient(
+              color: Color.fromRGBO(235, 243, 249, 1),
+              /*gradient: LinearGradient(
                   begin: Alignment.bottomRight,
                   colors: [
+                    Color.fromRGBO(235, 243, 249, 1),
                     Theme.of(context).primaryColor, 
-                    Colors.black.withOpacity(.4)])),
+                    Colors.black.withOpacity(.4)])*/),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
 
             /// App logo
+            //SizedBox(height: 40),
             AppLogo(),
-            SizedBox(height: 10),
+            //SizedBox(height: 10),
 
             /// App name
-            Text(APP_NAME,
+            /*Text(APP_NAME,
                 style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
@@ -61,8 +66,8 @@ class _SignInScreenState extends State<SignInScreen> {
             SizedBox(height: 5),
             Text(_i18n.translate("app_short_description"),
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 18, color: Colors.white)),
-            SizedBox(height: 22),
+                style: TextStyle(fontSize: 18, color: Colors.white)),*/
+            //SizedBox(height: 20),
 
               /// Sign in with Phone Number
               Padding(
@@ -72,8 +77,8 @@ class _SignInScreenState extends State<SignInScreen> {
                   child: DefaultButton(
                     child: Text(
                         _i18n.translate("sign_in_with_phone_number"),
-                        style: TextStyle(fontSize: 18)),
-                    onPressed: () {
+                        style: GoogleFonts.montserrat(fontSize: 18, color: Colors.black)),                   
+                        onPressed: () {
                       /// Go to phone number screen
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => PhoneNumberScreen()));
@@ -84,7 +89,7 @@ class _SignInScreenState extends State<SignInScreen> {
               SizedBox(height: 15),
 
               // Terms of Service section
-              Text(
+              /* Text(
                 _i18n.translate("by_tapping_log_in_you_agree_with_our"),
                 style: TextStyle(
                     color: Colors.white, fontWeight: FontWeight.bold),
@@ -93,7 +98,7 @@ class _SignInScreenState extends State<SignInScreen> {
               SizedBox(
                 height: 7,
               ),
-              TermsOfServiceRow(),
+              TermsOfServiceRow(), */
 
               SizedBox(height: 15),
             ],

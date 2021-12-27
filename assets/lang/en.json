@@ -23,7 +23,8 @@
 
   "_SignInScreen": "*** Sign In Screen Translations ***",
   "welcome_back": "Welcome",
-  "sign_in_with_phone_number": "Sign in with Phone Number",
+  "sign_in_with_phone_number": "log in with phone number",
+  "dont_you_have_an_account": "Don't you have an account yet? Sign in",
   "OR": "OR",
   "sign_in_with_social_apps": "Sign in with social apps",
 

@@ -57,16 +57,16 @@
         <!-- Config for google_mobile_ads plugin 
           Replace -> [ADMOB_APP_ID] with your Android Admob App ID -->
         <!-- Sample AdMob App ID for test: ca-app-pub-3940256099942544~3347511713 -->  
-        <meta-data
+        <!-- meta-data
           android:name="com.google.android.gms.ads.APPLICATION_ID"
-          android:value="[ADMOB_APP_ID]"/>
+          android:value="[ADMOB_APP_ID]"/ -->
 
         <!-- Config for place_picker plugin to use the Passport feature!
         // Add your Android API KEY for Google MAPS 
         // Get your it from your Google Cloud Platform Developer Account
         // Link: https://console.cloud.google.com/apis/credentials -->
-        <meta-data android:name="com.google.android.geo.API_KEY"
-               android:value="YOUR ANDROID API KEY"/>             
+        <!--meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="YOUR ANDROID API KEY"/-->             
             
     </application>
 </manifest>

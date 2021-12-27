@@ -10,7 +10,7 @@ class AppLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-        child: Image.asset("assets/images/app_logo.png",
-            width: width ?? 120, height: height ?? 120));
+        child: Image.asset("assets/images/teraryum_logo.png",
+            width: width ?? 300, height: height ?? 150));
   }
 }

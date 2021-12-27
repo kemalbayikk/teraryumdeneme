@@ -4,7 +4,7 @@ import 'package:dating_app/api/matches_api.dart';
 import 'package:dating_app/datas/user.dart';
 import 'package:dating_app/dialogs/flag_user_dialog.dart';
 import 'package:dating_app/dialogs/its_match_dialog.dart';
-import 'package:dating_app/helpers/app_ad_helper.dart';
+//import 'package:dating_app/helpers/app_ad_helper.dart';
 import 'package:dating_app/helpers/app_helper.dart';
 import 'package:dating_app/helpers/app_localizations.dart';
 import 'package:dating_app/models/user_model.dart';
@@ -48,12 +48,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   void initState() {
     super.initState();
-    AppAdHelper().showInterstitialAd();
+   // AppAdHelper().showInterstitialAd();
   }
 
   @override
   void dispose() {
-    AppAdHelper().disposeInterstitialAd();
+    //AppAdHelper().disposeInterstitialAd();
     super.dispose();
   }
 

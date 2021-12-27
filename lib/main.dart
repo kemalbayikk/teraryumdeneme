@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:dating_app/constants/constants.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
+//import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -19,13 +19,13 @@ void main() async {
   // For play billing library 2.0 on Android, it is mandatory to call
   // [enablePendingPurchases](https://developer.android.com/reference/com/android/billingclient/api/BillingClient.Builder.html#enablependingpurchases)
   // as part of initializing the app.
-  InAppPurchaseConnection.enablePendingPurchases();
+  //InAppPurchaseConnection.enablePendingPurchases();
   // Initialized before calling runApp to init firebase app
   WidgetsFlutterBinding.ensureInitialized();
   // Initialize firebase app
   await Firebase.initializeApp();
   // Initialize Google Mobile Ads SDK
-  await MobileAds.instance.initialize();
+  //await MobileAds.instance.initialize();
 
   /// Update the iOS foreground notification presentation options to allow
   /// heads up notifications.

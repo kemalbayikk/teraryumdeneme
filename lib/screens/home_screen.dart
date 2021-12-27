@@ -202,11 +202,11 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
 
     /// Check User VIP Status
-    _checkUserVipStatus();
+    //_checkUserVipStatus();
 
     /// Init streams
     _getCurrentUserUpdates();
-    _handlePurchaseUpdates();
+    //_handlePurchaseUpdates();
     _initFirebaseMessage();
 
     /// Request permission for IOS
